@@ -22,8 +22,8 @@ from bokeh.models import Button
 from bokeh.models import CustomJS
 from streamlit_bokeh_events import streamlit_bokeh_events # pip install streamlit-bokeh-events
 from translate import Translator
-from_lang='en'; to_lang ='ko'
-#from_lang='ko'; to_lang ='en'
+#from_lang='en'; to_lang ='ko'
+from_lang='ko'; to_lang ='en'
 
 #// recognition.lang = 'en-US';
 #//recognition.lang = from_lang;
@@ -56,6 +56,7 @@ stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
     recognition.continuous = true;
     recognition.interimResults = true;
+    recognition.lang = "ko-KR"
     
     recognition.onresult = function (e) {
         var value = "";
