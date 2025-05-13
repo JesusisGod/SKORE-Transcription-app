@@ -34,7 +34,7 @@ from_lang='en'; to_lang ='ko'
 def text_translation(text,from_lang,to_lang): # from c:/Users/Ogunbo/gradio-groq-basics-main/calorie-tracker/gradio_Elevenlabs.py
     translation = Translator(from_lang=from_lang,to_lang=to_lang)
     translation_text =translation.translate(text)
-    """
+    ccc="""
     translator_es = Translator(from_lang="en", to_lang="es")
     es_text = translator_es.translate(text)
 
