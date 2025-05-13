@@ -89,9 +89,9 @@ if result:
         trF=transcription.find(".")
         trQ=transcription.find("?")
         translation = text_translation(transcription,from_lang,to_lang)
-        st.write(f"#{translation}")
+        st.write(f"{translation}")
         print(translation)
         if(trF > -1 or trQ >-1):
             translation = text_translation(transcription,from_lang,to_lang)
             print(translation)
-            st.write(f"#{translation}")
+            st.write(f"{translation}")
