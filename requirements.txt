@@ -1,5 +1,4 @@
-python==3.10
-setuptools
+python==3.10.16
 numpy==1.23.5
 streamlit 
 bokeh==2.4.3 
